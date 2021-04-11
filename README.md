@@ -22,4 +22,30 @@ The design specifications for the MechaCar suspension coils dictate that the var
 ---
 
 ## T-Tests on Suspension Coils
+Finaly, I performed 4 t-tests to test the p-value for all the cars as well as to test if each of the 3 lots deviated from the mean of 1,500 PSI. A signifance level of 95% was used for all t-tests, meaning that the test results should be true at least 95% of the time. 
 
+#### All Car T-Test
+The t-test for all the cars across all lots returned a p-value greater than 0.05, meaning that I would fail to reject that there is a statistical difference between all cars and the mean of 1,500 PSI.
+
+
+#### Lot 1 T-Test
+The t-test for the cars in lot 1 returned a p-value of exactly 1, meaning that I would fail to reject that there is a statistical difference between all cars and the mean of 1,500 PSI, as they are statistically similar.
+
+
+#### Lot 2 T-Test
+The t-test for the cars in lot 2 returned a p-value greater than 0.05, meaning that I would fail to reject that there is a statistical difference between the cars in lot 2 and the mean of 1,500 PSI.
+
+
+#### Lot 3 T-Test
+The t-test for the cars in lot 3 returned a p-value less than 0.05, meaning that I would reject the null hypothesis there is no statistical difference between the lot 3 cars and the mean of 1,500 PSI.
+
+---
+
+## MechaCar vs the Competition
+Additional anlyses could be performed to compare the MechaCar to the competition. One metric that may be important to look at is how the MechaCar's fuel efficiency fares compared to the competition. A one-way ANOVA test would be an efficient way to compare the fuel efficiency across competitors. In this case, the hypothesis would be: 
+Does the fuel efficiency of any of the cars differ from the mean of xMPG?
+
+Null Hypothesis (H0): The means of all the cars are equal
+Alternative Hypothesis (Ha): At least one of the means is different from the other cars
+
+To perform this statistical analysis in R, a single data frame would need to be created with the data of all the cars, and then you would use the aov() function.
