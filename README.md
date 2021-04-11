@@ -12,12 +12,18 @@ First, I created the code to read the csv file containing MechaCar mpg data. The
 - The slope of the linear model is not considered to be 0 since 2 of the independent variables (vehicle length and ground clearance) had an effect on the dependent variable (mpg).
 - This linear model can effectively predict the mpg of MecharCar prototypes because of the R-squared value of 0.71.
 
+![mpg_linear_regression](https://github.com/AndrewTymkiv/MechaCar_Statistical_Analysis/blob/main/images/mpg_linear_regression.PNG)
+
 ---
 
 ## Summary Statistics of Suspension Coils
 For this step, I began with loading in the csv file of the suspension coil data. I wanted to obtain the summary statistics of all cars as well as the summary for each lot of cars to get a more specific summary. 
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 PSI (pounds per square inch). Looking at the total summary, the variance is 76, which is a lot, but still under 100. However, when performing the summary by lot, it becomes evident that very little variance occurs in lot 1 and 2, but lot 3 has a variance of 220, which does not meet the design specifications. 
+
+![suspension_coil_summary](https://github.com/AndrewTymkiv/MechaCar_Statistical_Analysis/blob/main/images/suspension_coil_summary.PNG)
+
+![lot_summary](https://github.com/AndrewTymkiv/MechaCar_Statistical_Analysis/blob/main/images/lot_summary.PNG)
 
 ---
 
@@ -27,17 +33,25 @@ Finaly, I performed 4 t-tests to test the p-value for all the cars as well as to
 #### All Car T-Test
 The t-test for all the cars across all lots returned a p-value greater than 0.05, meaning that I would fail to reject that there is a statistical difference between all cars and the mean of 1,500 PSI.
 
+![all_car_t_test](https://github.com/AndrewTymkiv/MechaCar_Statistical_Analysis/blob/main/images/all_car_t_test.PNG)
+
 
 #### Lot 1 T-Test
 The t-test for the cars in lot 1 returned a p-value of exactly 1, meaning that I would fail to reject that there is a statistical difference between all cars and the mean of 1,500 PSI, as they are statistically similar.
+
+![lot1_t_test](https://github.com/AndrewTymkiv/MechaCar_Statistical_Analysis/blob/main/images/lot1_t_test.PNG)
 
 
 #### Lot 2 T-Test
 The t-test for the cars in lot 2 returned a p-value greater than 0.05, meaning that I would fail to reject that there is a statistical difference between the cars in lot 2 and the mean of 1,500 PSI.
 
+![lot2_t_test](https://github.com/AndrewTymkiv/MechaCar_Statistical_Analysis/blob/main/images/lot2_t_test.PNG)
+
 
 #### Lot 3 T-Test
 The t-test for the cars in lot 3 returned a p-value less than 0.05, meaning that I would reject the null hypothesis there is no statistical difference between the lot 3 cars and the mean of 1,500 PSI.
+
+![lot3_t_test](https://github.com/AndrewTymkiv/MechaCar_Statistical_Analysis/blob/main/images/lot3_t_test.PNG)
 
 ---
 
